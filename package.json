@@ -1,0 +1,33 @@
+{
+  "name": "freela-progress-proof",
+  "displayName": "Freelance Progress Proof",
+  "description": "Gerenciador de orçamentos e relatórios para freelancers",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.124.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:freela-tracker.menuPrincipal"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "freela-tracker.menuPrincipal",
+        "title": "Freela: Abrir Menu Principal"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/vscode": "^1.124.0",
+    "typescript": "^5.9.3"
+  }
+}
